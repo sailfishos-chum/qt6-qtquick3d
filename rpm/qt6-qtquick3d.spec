@@ -191,7 +191,7 @@ popd
 %{_qt6_libdir}/cmake/Qt6Quick3DParticleEffects/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6BundledOpenXR
 %{_qt6_libdir}/cmake/Qt6BundledOpenXR/*.cmake
-
+%{_qt6_libdir}/libQt6BundledOpenXR.a
 %ifarch x86_64 aarch64
 %{_qt6_libdir}/libQt6BundledEmbree.a
 %endif
