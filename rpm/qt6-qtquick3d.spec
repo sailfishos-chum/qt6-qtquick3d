@@ -157,13 +157,11 @@ popd
 %{_qt6_libdir}/cmake/Qt6Quick3DIblBaker/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6Quick3DParticles
 %{_qt6_libdir}/cmake/Qt6Quick3DParticles/*.cmake
-%{_qt6_libdir}/cmake/Qt6/FindWrapQuick3DAssimp.cmake
 %{_qt6_libdir}/cmake/Qt6BuildInternals/StandaloneTests/*.cmake
 %{_qt6_libdir}/cmake/Qt6Qml/*.cmake
 %{_qt6_libdir}/cmake/Qt6Qml/QmlPlugins/*.cmake
 %ifarch x86_64 aarch64
 %dir %{_qt6_libdir}/cmake/Qt6BundledEmbree/
-%{_qt6_libdir}/cmake/Qt6/FindWrapBundledEmbreeConfigExtra.cmake
 %{_qt6_libdir}/cmake/Qt6BundledEmbree/*.cmake
 %endif
 
@@ -191,6 +189,9 @@ popd
 %{_qt6_libdir}/cmake/Qt6Quick3DGlslParserPrivate/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6Quick3DParticleEffects
 %{_qt6_libdir}/cmake/Qt6Quick3DParticleEffects/*.cmake
+%dir %{_qt6_libdir}/cmake/Qt6BundledOpenXR
+%{_qt6_libdir}/cmake/Qt6BundledOpenXR/*.cmake
+
 %ifarch x86_64 aarch64
 %{_qt6_libdir}/libQt6BundledEmbree.a
 %endif
