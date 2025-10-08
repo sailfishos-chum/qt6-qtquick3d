@@ -1,4 +1,4 @@
-%global  qt_version 6.7.2
+%global  qt_version 6.8.3
 
 Summary: Qt6 - Quick3D Libraries and utilities
 Name:    qt6-qtquick3d
@@ -118,8 +118,10 @@ popd
 %{_qt6_libdir}/libQt6Quick3DHelpersImpl.so*
 %{_qt6_libdir}/libQt6Quick3DParticleEffects.so.6*
 %{_qt6_libdir}/libQt6Quick3DGlslParser.so.6*
+%{_qt6_libdir}/libQt6Quick3DXr.so.6*
 %dir %{_qt6_qmldir}/QtQuick3D/
 %{_qt6_qmldir}/QtQuick3D/
+%dir %{_qt6_plugindir}/assetimporters
 %{_qt6_plugindir}/assetimporters/*.so
 
 %files devel
@@ -149,6 +151,8 @@ popd
 %{_qt6_includedir}/QtQuick3DHelpers
 %{_qt6_includedir}/QtQuick3DHelpersImpl
 %{_qt6_includedir}/QtQuick3DGlslParser
+%{_qt6_includedir}/QtQuick3DXr
+%{_qt6_libdir}/cmake/Qt6/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6Quick3DIblBaker
 %{_qt6_libdir}/cmake/Qt6Quick3DIblBaker/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6Quick3DParticles
@@ -162,7 +166,10 @@ popd
 %{_qt6_libdir}/cmake/Qt6/FindWrapBundledEmbreeConfigExtra.cmake
 %{_qt6_libdir}/cmake/Qt6BundledEmbree/*.cmake
 %endif
+
 %dir %{_qt6_libdir}/cmake/Qt6Quick3D/
+%{_qt6_libdir}/cmake/Qt6Quick3DXr/*.cmake
+%dir %{_qt6_libdir}/cmake/Qt6Quick3DXr/
 %{_qt6_libdir}/cmake/Qt6Quick3D/*.cmake
 %dir %{_qt6_libdir}/cmake/Qt6Quick3DAssetImport/
 %{_qt6_libdir}/cmake/Qt6Quick3DAssetImport/*.cmake
@@ -187,6 +194,8 @@ popd
 %ifarch x86_64 aarch64
 %{_qt6_libdir}/libQt6BundledEmbree.a
 %endif
+%{_qt6_libdir}/libQt6Quick3DXr.prl
+%{_qt6_libdir}/libQt6Quick3DXr.so
 %{_qt6_libdir}/libQt6Quick3D.prl
 %{_qt6_libdir}/libQt6Quick3D.so
 %{_qt6_libdir}/libQt6Quick3DAssetImport.prl
