@@ -1,8 +1,8 @@
-%global  qt_version 6.8.3
+%global qt_version 6.8.4
 
 Summary: Qt6 - Quick3D Libraries and utilities
 Name:    qt6-qtquick3d
-Version: 6.8.3
+Version: 6.8.4
 Release: 3%{?dist}
 
 License: LGPL-3.0-only OR GPL-3.0-only WITH Qt-GPL-exception-1.0
